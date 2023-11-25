@@ -1,5 +1,4 @@
 # 3D Desert Reconstruction using NeRF
-This repository contains codes used for the course project of Fundamentals of Machine Learning.
 Title: Neural Radiance Fields (NeRF) based 3D Scene Reconstruction of a Desert Environment
 
 It contains 2 folders one for collected datasets and another for unity project to collect simulated data. Instant NGP is used for NeRF reconstruction for which its official repository is provided below.
