@@ -2,6 +2,9 @@
 This repository contains codes used for the course project of Fundamentals of Machine Learning.
 Title: Neural Radiance Fields (NeRF) based 3D Scene Reconstruction of a Desert Environment
 
+It contains 2 folders one for collected datasets and another for unity project to collect simulated data. Instant NGP is used for NeRF reconstruction for which its official repository is provided below.
+It also contain one python script used to preprocess data whose steps are mentioned below.
+
 ## Unity ROS Camera (package) - Data Collection
 ### A simple robot with 4 wheels
 - A simple urdf file is created (along with xacro). This urdf file is imported to unity using urdf importer.
@@ -40,6 +43,18 @@ Title: Neural Radiance Fields (NeRF) based 3D Scene Reconstruction of a Desert E
 - Run teleop_twist_keyboard in another terminal and control the robot using keyboard
   - ROS1: `rosrun teleop_twist_keyboard teleop_twist_keyboard.py`
   - ROS2: `ros2 run teleop_twist_keyboard teleop_twist_keyboard`
+ 
+
+ ## Nerf Reconstruction
+ Follow following steps
+ - Clone the Official repo of instant NGP: [instant-ngp](https://github.com/NVlabs/instant-ngp) and install required dependencies like pytorch, numpy, cuda etc.
+ - Create a folder dataset (collect your own or use provided here)
+ - If using real dataset, follow the instructions provided in the instant NGP repo to prerpocess data using COLMAP
+ - If using simulated data, run the convert.py script using below command
+  - `convert.py <path to dataset>`
+  - It will create a file named 'transforms.json'
+ - Run the following command in the base folder of instant-ngp folder
+  - `./instant-ngp <path to dataset>`  
 
 ## Credits
 - Most of the code is from [Navigation 2 SLAM Example](https://github.com/Unity-Technologies/Robotics-Nav2-SLAM-Example). Following addition/modifications are made
