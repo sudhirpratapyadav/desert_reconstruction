@@ -1,7 +1,8 @@
-# desert_reconstruction
-Codes available for reconstruction of desert using NERF
+# 3D Desert Reconstruction using NeRF
+This repository contains codes used for the course project of Fundamentals of Machine Learning.
+Title: Neural Radiance Fields (NeRF) based 3D Scene Reconstruction of a Desert Environment
 
-### Unity ROS Camera (package)
+### Unity ROS Camera (package) - Data Collection
 #### A simple robot with 4 wheels
 - A simple urdf file is created (along with xacro). This urdf file is imported to unity using urdf importer.
 - A differential drive robot controller is implemented in unity. This subscribe to "cmd_vel" topic and generate commands for movement of robot in unity.
