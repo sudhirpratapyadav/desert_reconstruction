@@ -2,19 +2,19 @@
 This repository contains codes used for the course project of Fundamentals of Machine Learning.
 Title: Neural Radiance Fields (NeRF) based 3D Scene Reconstruction of a Desert Environment
 
-### Unity ROS Camera (package) - Data Collection
-#### A simple robot with 4 wheels
+## Unity ROS Camera (package) - Data Collection
+### A simple robot with 4 wheels
 - A simple urdf file is created (along with xacro). This urdf file is imported to unity using urdf importer.
 - A differential drive robot controller is implemented in unity. This subscribe to "cmd_vel" topic and generate commands for movement of robot in unity.
 
-#### LIDAR (3D laser Scanner)
+### LIDAR (3D laser Scanner)
 - A 3D laser scanner sensor is implement using Ray Casting. It has parameters such as fov, angular_resolution (both horizontal and vertical), min_range, max_range etc.
 - A Point Cloud publisher publish the generated point cloud to 'point_cloud' topic. It aslo publish the pose (position and orientation) of the laser_scanner to 'laser_scan_pose'.
 
-#### Camera
+### Camera
 - A camera is attached to the robot which can be moved using ROS.
 
- #### Notes
+ ### Notes
  - This package is in ROS2 meaning unity scripts in this are written for ROS2, so if you will select ROS1 in unity (in [ROS-TCP-Connector](https://github.com/Unity-Technologies/ROS-TCP-Connector)) it will show compilation error. By default ROS2 is selected but if you want to run this in ROS1 you have to modify scripts accordingly.
  - Please do read how unity-ros framework works. [ROS Unity Hub](https://github.com/Unity-Technologies/Unity-Robotics-Hub) [ROS Unity Integration](https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tutorials/ros_unity_integration/README.md)
  - User can edit xacro file and then generate urdf from it. And import new urdf into the unity to try different robot.
