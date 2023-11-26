@@ -1,5 +1,5 @@
 # Results on youtube
-- Playlist Link: [nerf results](https://www.youtube.com/playlist?list=PLpE2rfLkAl1BEUv8hyF6kycmggXIhf_)
+- Playlist Link: [nerf results](https://www.youtube.com/playlist?list=PLpE2rfLkAl1BEUv8hyF6kycmggXIhf_T3)
 
 # 3D Desert Reconstruction using NeRF
 Title: Neural Radiance Fields (NeRF) based 3D Scene Reconstruction of a Desert Environment
