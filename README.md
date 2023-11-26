@@ -1,3 +1,6 @@
+# Results on youtube
+- Playlist Link: [nerf results](https://github.com/sudhirpratapyadav/desert_reconstruction/tree/main/datasets)
+
 # 3D Desert Reconstruction using NeRF
 Title: Neural Radiance Fields (NeRF) based 3D Scene Reconstruction of a Desert Environment
 
